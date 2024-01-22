@@ -25,11 +25,21 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-      <dependency>
+    <dependency>
+      <groupId>io.grpc</groupId>
+      <artifactId>grpc-stub</artifactId>
+      <version>1.59.0</version>
+    </dependency>
+    <dependency>
       <groupId>io.grpc</groupId>
       <artifactId>grpc-protobuf</artifactId>
       <version>1.59.0</version>
-        </dependency>
+    </dependency>
+      <dependency>
+        <groupId>com.google.protobuf</groupId>
+        <artifactId>protobuf-java</artifactId>
+        <version>3.20.3</version>
+      </dependency>
   </dependencies>
 
   <build>
@@ -59,8 +69,8 @@
             <pluginId>grpc-java</pluginId>
             <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.40.1:exe:${os.detected.classifier}</pluginArtifact>
             <protoSourceRoot>src/main/proto</protoSourceRoot>
-            <outputDirectory>src/main/</outputDirectory>
-            <cleanOutputFolder>false</cleanOutputFolder>
+            <!-- <outputDirectory>src/main/</outputDirectory>
+            <cleanOutputFolder>false</cleanOutputFolder> -->
           </configuration>
           <executions>
             <execution>
