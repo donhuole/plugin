@@ -1,0 +1,100 @@
+[34m2023-09-18 03:21:19.418 UTC [orderer.common.cluster] func1 -> INFO 01d[0m 3 exists in both old and new membership for channel mychannel , skipping its deactivation
+[34m2023-09-18 03:21:19.418 UTC [orderer.common.cluster] Configure -> INFO 01e[0m Exiting
+[34m2023-09-18 03:21:19.418 UTC [orderer.consensus.etcdraft] start -> INFO 01f[0m Starting raft node as part of a new channel channel=mychannel node=2
+[34m2023-09-18 03:21:19.418 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 020[0m 2 became follower at term 0 channel=mychannel node=2
+[34m2023-09-18 03:21:19.418 UTC [orderer.consensus.etcdraft] newRaft -> INFO 021[0m newRaft 2 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0] channel=mychannel node=2
+[34m2023-09-18 03:21:19.418 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 022[0m 2 became follower at term 1 channel=mychannel node=2
+[34m2023-09-18 03:21:19.418 UTC [orderer.consensus.etcdraft] run -> INFO 023[0m This node is picked to start campaign channel=mychannel node=2
+[34m2023-09-18 03:21:19.422 UTC [orderer.consensus.etcdraft] apply -> INFO 024[0m Applied config change to add node 1, current nodes in channel: [1 2 3] channel=mychannel node=2
+[34m2023-09-18 03:21:19.422 UTC [orderer.consensus.etcdraft] apply -> INFO 025[0m Applied config change to add node 2, current nodes in channel: [1 2 3] channel=mychannel node=2
+[34m2023-09-18 03:21:19.422 UTC [orderer.consensus.etcdraft] apply -> INFO 026[0m Applied config change to add node 3, current nodes in channel: [1 2 3] channel=mychannel node=2
+[34m2023-09-18 03:21:20.419 UTC [orderer.consensus.etcdraft] Step -> INFO 027[0m 2 is starting a new election at term 1 channel=mychannel node=2
+[34m2023-09-18 03:21:20.419 UTC [orderer.consensus.etcdraft] becomePreCandidate -> INFO 028[0m 2 became pre-candidate at term 1 channel=mychannel node=2
+[34m2023-09-18 03:21:20.419 UTC [orderer.consensus.etcdraft] poll -> INFO 029[0m 2 received MsgPreVoteResp from 2 at term 1 channel=mychannel node=2
+[34m2023-09-18 03:21:20.420 UTC [orderer.consensus.etcdraft] campaign -> INFO 02a[0m 2 [logterm: 1, index: 3] sent MsgPreVote request to 3 at term 1 channel=mychannel node=2
+[34m2023-09-18 03:21:20.420 UTC [orderer.consensus.etcdraft] campaign -> INFO 02b[0m 2 [logterm: 1, index: 3] sent MsgPreVote request to 1 at term 1 channel=mychannel node=2
+[34m2023-09-18 03:21:20.424 UTC [orderer.consensus.etcdraft] poll -> INFO 02c[0m 2 received MsgPreVoteResp from 1 at term 1 channel=mychannel node=2
+[34m2023-09-18 03:21:20.425 UTC [orderer.consensus.etcdraft] stepCandidate -> INFO 02d[0m 2 [quorum:2] has received 2 MsgPreVoteResp votes and 0 vote rejections channel=mychannel node=2
+[34m2023-09-18 03:21:20.425 UTC [orderer.consensus.etcdraft] becomeCandidate -> INFO 02e[0m 2 became candidate at term 2 channel=mychannel node=2
+[34m2023-09-18 03:21:20.425 UTC [orderer.consensus.etcdraft] poll -> INFO 02f[0m 2 received MsgVoteResp from 2 at term 2 channel=mychannel node=2
+[34m2023-09-18 03:21:20.425 UTC [orderer.consensus.etcdraft] campaign -> INFO 030[0m 2 [logterm: 1, index: 3] sent MsgVote request to 1 at term 2 channel=mychannel node=2
+[34m2023-09-18 03:21:20.425 UTC [orderer.consensus.etcdraft] campaign -> INFO 031[0m 2 [logterm: 1, index: 3] sent MsgVote request to 3 at term 2 channel=mychannel node=2
+[33m2023-09-18 03:21:20.429 UTC [orderer.common.cluster.step] sendMessage -> WARN 032[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 60.457µs but failed due to EOF
+[34m2023-09-18 03:21:20.432 UTC [orderer.consensus.etcdraft] poll -> INFO 033[0m 2 received MsgVoteResp from 1 at term 2 channel=mychannel node=2
+[34m2023-09-18 03:21:20.432 UTC [orderer.consensus.etcdraft] stepCandidate -> INFO 034[0m 2 [quorum:2] has received 2 MsgVoteResp votes and 0 vote rejections channel=mychannel node=2
+[34m2023-09-18 03:21:20.433 UTC [orderer.consensus.etcdraft] becomeLeader -> INFO 035[0m 2 became leader at term 2 channel=mychannel node=2
+[34m2023-09-18 03:21:20.433 UTC [orderer.consensus.etcdraft] run -> INFO 036[0m raft.node: 2 elected leader 2 at term 2 channel=mychannel node=2
+[34m2023-09-18 03:21:20.435 UTC [orderer.consensus.etcdraft] run -> INFO 037[0m Leader 2 is present, quit campaign channel=mychannel node=2
+[34m2023-09-18 03:21:20.435 UTC [orderer.consensus.etcdraft] run -> INFO 038[0m Raft leader changed: 0 -> 2 channel=mychannel node=2
+[31m2023-09-18 03:21:20.435 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 039[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 03:21:20.439 UTC [orderer.consensus.etcdraft] run -> INFO 03a[0m Start accepting requests as Raft leader at block [0] channel=mychannel node=2
+[34m2023-09-18 03:21:20.920 UTC [orderer.consensus.etcdraft] send -> INFO 03b[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[33m2023-09-18 03:21:21.420 UTC [orderer.common.cluster.step] sendMessage -> WARN 03c[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 243.713µs but failed due to EOF
+[31m2023-09-18 03:21:21.919 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 03d[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 03:21:22.419 UTC [orderer.consensus.etcdraft] send -> INFO 03e[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[33m2023-09-18 03:21:22.919 UTC [orderer.common.cluster.step] sendMessage -> WARN 03f[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 99.372µs but failed due to EOF
+[31m2023-09-18 03:21:23.419 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 040[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 03:21:23.920 UTC [orderer.consensus.etcdraft] send -> INFO 041[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[33m2023-09-18 03:21:24.419 UTC [orderer.common.cluster.step] sendMessage -> WARN 042[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 165.998µs but failed due to EOF
+[31m2023-09-18 03:21:24.920 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 043[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 03:21:25.419 UTC [orderer.consensus.etcdraft] send -> INFO 044[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[34m2023-09-18 03:21:33.306 UTC [orderer.consensus.etcdraft] propose -> INFO 045[0m Created block [1], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:21:33.306 UTC [orderer.consensus.etcdraft] run -> INFO 046[0m Received config transaction, pause accepting transaction till it is committed channel=mychannel node=2
+[34m2023-09-18 03:21:33.426 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 047[0m Writing block [1] (Raft index: 5) to ledger channel=mychannel node=2
+[34m2023-09-18 03:21:34.088 UTC [orderer.consensus.etcdraft] propose -> INFO 048[0m Created block [2], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:21:34.090 UTC [orderer.consensus.etcdraft] run -> INFO 049[0m Received config transaction, pause accepting transaction till it is committed channel=mychannel node=2
+[34m2023-09-18 03:21:34.111 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 04a[0m Writing block [2] (Raft index: 6) to ledger channel=mychannel node=2
+[34m2023-09-18 03:22:15.193 UTC [orderer.consensus.etcdraft] propose -> INFO 04b[0m Created block [3], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:22:15.206 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 04c[0m Writing block [3] (Raft index: 7) to ledger channel=mychannel node=2
+[34m2023-09-18 03:22:23.596 UTC [orderer.consensus.etcdraft] propose -> INFO 04d[0m Created block [4], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:22:23.674 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 04e[0m Writing block [4] (Raft index: 8) to ledger channel=mychannel node=2
+[34m2023-09-18 03:22:32.150 UTC [orderer.consensus.etcdraft] propose -> INFO 04f[0m Created block [5], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:22:32.176 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 050[0m Writing block [5] (Raft index: 9) to ledger channel=mychannel node=2
+[34m2023-09-18 03:23:18.893 UTC [orderer.consensus.etcdraft] propose -> INFO 051[0m Created block [6], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:23:18.894 UTC [orderer.consensus.etcdraft] run -> INFO 052[0m Received config transaction, pause accepting transaction till it is committed channel=mychannel node=2
+[34m2023-09-18 03:23:18.920 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 053[0m Writing block [6] (Raft index: 10) to ledger channel=mychannel node=2
+[33m2023-09-18 03:23:19.057 UTC [orderer.common.broadcast] ProcessMessage -> WARN 054[0m [channel: mychannel] Rejecting broadcast of config message from 192.168.208.7:36424 because of error: error applying config update to existing channel 'mychannel': error authorizing update: error validating ReadSet: proposed update requires that key [Group]  /Channel/Application be at version 0, but it is currently at version 1
+[34m2023-09-18 03:23:19.057 UTC [comm.grpc.server] 1 -> INFO 055[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.7:36424 grpc.code=OK grpc.call_duration=2.693363ms
+[34m2023-09-18 03:23:23.145 UTC [orderer.consensus.etcdraft] propose -> INFO 056[0m Created block [7], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:23:23.146 UTC [orderer.consensus.etcdraft] run -> INFO 057[0m Received config transaction, pause accepting transaction till it is committed channel=mychannel node=2
+[34m2023-09-18 03:23:23.160 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 058[0m Writing block [7] (Raft index: 11) to ledger channel=mychannel node=2
+[34m2023-09-18 03:25:15.691 UTC [orderer.consensus.etcdraft] propose -> INFO 059[0m Created block [8], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:25:15.704 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 05a[0m Writing block [8] (Raft index: 12) to ledger channel=mychannel node=2
+[34m2023-09-18 03:25:29.161 UTC [orderer.consensus.etcdraft] propose -> INFO 05b[0m Created block [9], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:25:29.175 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 05c[0m Writing block [9] (Raft index: 13) to ledger channel=mychannel node=2
+[34m2023-09-18 03:25:47.674 UTC [orderer.consensus.etcdraft] propose -> INFO 05d[0m Created block [10], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:25:47.687 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 05e[0m Writing block [10] (Raft index: 14) to ledger channel=mychannel node=2
+[34m2023-09-18 03:26:19.106 UTC [orderer.consensus.etcdraft] propose -> INFO 05f[0m Created block [11], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:26:19.158 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 060[0m Writing block [11] (Raft index: 15) to ledger channel=mychannel node=2
+[34m2023-09-18 03:27:41.145 UTC [orderer.consensus.etcdraft] propose -> INFO 061[0m Created block [12], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:27:41.233 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 062[0m Writing block [12] (Raft index: 16) to ledger channel=mychannel node=2
+[34m2023-09-18 03:29:48.849 UTC [orderer.consensus.etcdraft] propose -> INFO 063[0m Created block [13], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:29:48.862 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 064[0m Writing block [13] (Raft index: 17) to ledger channel=mychannel node=2
+[33m2023-09-18 03:30:48.207 UTC [orderer.common.cluster] handleMessage -> WARN 065[0m Stream read from 192.168.208.4:32786 failed: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:30:48.207 UTC [comm.grpc.server] 1 -> INFO 066[0m streaming call completed grpc.service=orderer.Cluster grpc.method=Step grpc.peer_address=192.168.208.4:32786 grpc.peer_subject="CN=orderer2.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=9m22.773908249s
+[33m2023-09-18 03:30:48.420 UTC [orderer.common.cluster.step] sendMessage -> WARN 067[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 208.992µs but failed due to EOF
+[31m2023-09-18 03:30:48.920 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 068[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 03:30:51.920 UTC [orderer.consensus.etcdraft] send -> INFO 069[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[33m2023-09-18 03:31:51.699 UTC [orderer.common.cluster] handleMessage -> WARN 06a[0m Stream read from 192.168.208.4:33500 failed: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:31:51.699 UTC [comm.grpc.server] 1 -> INFO 06b[0m streaming call completed grpc.service=orderer.Cluster grpc.method=Step grpc.peer_address=192.168.208.4:33500 grpc.peer_subject="CN=orderer2.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=59.775902593s
+[33m2023-09-18 03:31:51.920 UTC [orderer.common.cluster.step] sendMessage -> WARN 06c[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 39.952µs but failed due to EOF
+[31m2023-09-18 03:31:52.419 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 06d[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 03:31:55.858 UTC [orderer.consensus.etcdraft] propose -> INFO 06e[0m Created block [14], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 03:31:56.124 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 06f[0m Writing block [14] (Raft index: 18) to ledger channel=mychannel node=2
+[34m2023-09-18 03:31:56.919 UTC [orderer.consensus.etcdraft] send -> INFO 070[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[34m2023-09-18 05:38:04.932 UTC [orderer.consensus.etcdraft] propose -> INFO 071[0m Created block [15], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 05:38:04.948 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 072[0m Writing block [15] (Raft index: 19) to ledger channel=mychannel node=2
+[34m2023-09-18 05:40:11.843 UTC [orderer.consensus.etcdraft] propose -> INFO 073[0m Created block [16], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 05:40:11.947 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 074[0m Writing block [16] (Raft index: 20) to ledger channel=mychannel node=2
+[33m2023-09-18 05:41:11.019 UTC [orderer.common.cluster] handleMessage -> WARN 075[0m Stream read from 192.168.208.4:33590 failed: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 05:41:11.019 UTC [comm.grpc.server] 1 -> INFO 076[0m streaming call completed grpc.service=orderer.Cluster grpc.method=Step grpc.peer_address=192.168.208.4:33590 grpc.peer_subject="CN=orderer2.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2h9m14.095004499s
+[33m2023-09-18 05:41:11.420 UTC [orderer.common.cluster.step] sendMessage -> WARN 077[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 422.138µs but failed due to EOF
+[31m2023-09-18 05:41:11.919 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 078[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 05:41:13.920 UTC [orderer.consensus.etcdraft] send -> INFO 079[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[33m2023-09-18 05:42:12.998 UTC [orderer.common.cluster] handleMessage -> WARN 07a[0m Stream read from 192.168.208.4:36940 failed: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 05:42:12.999 UTC [comm.grpc.server] 1 -> INFO 07b[0m streaming call completed grpc.service=orderer.Cluster grpc.method=Step grpc.peer_address=192.168.208.4:36940 grpc.peer_subject="CN=orderer2.example.com,L=San Francisco,ST=California,C=US" error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=59.076227468s
+[33m2023-09-18 05:42:13.420 UTC [orderer.common.cluster.step] sendMessage -> WARN 07c[0m Send of ConsensusRequest for channel mychannel with payload of size 28 to orderer2.example.com(orderer2.example.com:9050) took 162.706µs but failed due to EOF
+[31m2023-09-18 05:42:13.920 UTC [orderer.consensus.etcdraft] logSendFailure -> ERRO 07d[0m Failed to send StepRequest to 3, because: EOF channel=mychannel node=2
+[34m2023-09-18 05:42:15.919 UTC [orderer.consensus.etcdraft] send -> INFO 07e[0m Successfully sent StepRequest to 3 after failed attempt(s) channel=mychannel node=2
+[34m2023-09-18 05:42:16.105 UTC [orderer.consensus.etcdraft] propose -> INFO 07f[0m Created block [17], there are 0 blocks in flight channel=mychannel node=2
+[34m2023-09-18 05:42:16.530 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 080[0m Writing block [17] (Raft index: 21) to ledger channel=mychannel node=2

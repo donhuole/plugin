@@ -1,0 +1,100 @@
+[34m2023-09-18 03:21:14.134 UTC [orderer.common.cluster] func1 -> INFO 01c[0m 2 exists in both old and new membership for channel mychannel , skipping its deactivation
+[34m2023-09-18 03:21:14.134 UTC [orderer.common.cluster] func1 -> INFO 01d[0m 3 exists in both old and new membership for channel mychannel , skipping its deactivation
+[34m2023-09-18 03:21:14.134 UTC [orderer.common.cluster] Configure -> INFO 01e[0m Exiting
+[34m2023-09-18 03:21:14.134 UTC [orderer.consensus.etcdraft] start -> INFO 01f[0m Starting raft node as part of a new channel channel=mychannel node=1
+[34m2023-09-18 03:21:14.148 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 020[0m 1 became follower at term 0 channel=mychannel node=1
+[34m2023-09-18 03:21:14.148 UTC [orderer.consensus.etcdraft] newRaft -> INFO 021[0m newRaft 1 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0] channel=mychannel node=1
+[34m2023-09-18 03:21:14.148 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 022[0m 1 became follower at term 1 channel=mychannel node=1
+[34m2023-09-18 03:21:14.200 UTC [orderer.consensus.etcdraft] apply -> INFO 023[0m Applied config change to add node 1, current nodes in channel: [1 2 3] channel=mychannel node=1
+[34m2023-09-18 03:21:14.200 UTC [orderer.consensus.etcdraft] apply -> INFO 024[0m Applied config change to add node 2, current nodes in channel: [1 2 3] channel=mychannel node=1
+[34m2023-09-18 03:21:14.201 UTC [orderer.consensus.etcdraft] apply -> INFO 025[0m Applied config change to add node 3, current nodes in channel: [1 2 3] channel=mychannel node=1
+[34m2023-09-18 03:21:20.423 UTC [orderer.consensus.etcdraft] Step -> INFO 026[0m 1 [logterm: 1, index: 3, vote: 0] cast MsgPreVote for 2 [logterm: 1, index: 3] at term 1 channel=mychannel node=1
+[34m2023-09-18 03:21:20.429 UTC [orderer.consensus.etcdraft] Step -> INFO 027[0m 1 [term: 1] received a MsgVote message with higher term from 2 [term: 2] channel=mychannel node=1
+[34m2023-09-18 03:21:20.429 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 028[0m 1 became follower at term 2 channel=mychannel node=1
+[34m2023-09-18 03:21:20.429 UTC [orderer.consensus.etcdraft] Step -> INFO 029[0m 1 [logterm: 1, index: 3, vote: 0] cast MsgVote for 2 [logterm: 1, index: 3] at term 2 channel=mychannel node=1
+[34m2023-09-18 03:21:20.436 UTC [orderer.consensus.etcdraft] run -> INFO 02a[0m raft.node: 1 elected leader 2 at term 2 channel=mychannel node=1
+[34m2023-09-18 03:21:20.438 UTC [orderer.consensus.etcdraft] run -> INFO 02b[0m Raft leader changed: 0 -> 2 channel=mychannel node=1
+[33m2023-09-18 03:21:32.552 UTC [common.deliver] Handle -> WARN 02c[0m Error reading from 192.168.208.7:38888: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:21:32.552 UTC [comm.grpc.server] 1 -> INFO 02d[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=192.168.208.7:38888 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=19.345886ms
+[34m2023-09-18 03:21:33.304 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 02e[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:21:33.309 UTC [orderer.common.broadcast] Handle -> WARN 02f[0m Error reading from 192.168.208.7:38892: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:21:33.309 UTC [comm.grpc.server] 1 -> INFO 030[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.7:38892 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=22.377296ms
+[34m2023-09-18 03:21:33.430 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 031[0m Writing block [1] (Raft index: 5) to ledger channel=mychannel node=1
+[33m2023-09-18 03:21:33.747 UTC [common.deliver] Handle -> WARN 032[0m Error reading from 192.168.208.7:38898: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:21:33.747 UTC [comm.grpc.server] 1 -> INFO 033[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=192.168.208.7:38898 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=9.750725ms
+[34m2023-09-18 03:21:34.086 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 034[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:21:34.092 UTC [orderer.common.broadcast] Handle -> WARN 035[0m Error reading from 192.168.208.7:38900: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:21:34.092 UTC [comm.grpc.server] 1 -> INFO 036[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.7:38900 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.979552ms
+[34m2023-09-18 03:21:34.119 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 037[0m Writing block [2] (Raft index: 6) to ledger channel=mychannel node=1
+[34m2023-09-18 03:22:13.191 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 038[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[34m2023-09-18 03:22:15.207 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 039[0m Writing block [3] (Raft index: 7) to ledger channel=mychannel node=1
+[33m2023-09-18 03:22:15.307 UTC [orderer.common.broadcast] Handle -> WARN 03a[0m Error reading from 192.168.208.1:52018: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:22:15.308 UTC [comm.grpc.server] 1 -> INFO 03b[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52018 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.176945561s
+[34m2023-09-18 03:22:21.593 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 03c[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[34m2023-09-18 03:22:23.675 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 03d[0m Writing block [4] (Raft index: 8) to ledger channel=mychannel node=1
+[33m2023-09-18 03:22:23.875 UTC [orderer.common.broadcast] Handle -> WARN 03e[0m Error reading from 192.168.208.1:52050: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:22:23.875 UTC [comm.grpc.server] 1 -> INFO 03f[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52050 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.299326344s
+[34m2023-09-18 03:22:30.148 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 040[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[34m2023-09-18 03:22:32.177 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 041[0m Writing block [5] (Raft index: 9) to ledger channel=mychannel node=1
+[33m2023-09-18 03:22:32.734 UTC [orderer.common.broadcast] Handle -> WARN 042[0m Error reading from 192.168.208.1:52090: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:22:32.735 UTC [comm.grpc.server] 1 -> INFO 043[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52090 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.595349547s
+[33m2023-09-18 03:23:18.394 UTC [common.deliver] Handle -> WARN 044[0m Error reading from 192.168.208.7:39068: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:23:18.394 UTC [comm.grpc.server] 1 -> INFO 045[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=192.168.208.7:39068 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=10.360832ms
+[34m2023-09-18 03:23:18.890 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 046[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:23:18.897 UTC [orderer.common.broadcast] Handle -> WARN 047[0m Error reading from 192.168.208.7:39070: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:23:18.897 UTC [comm.grpc.server] 1 -> INFO 048[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.7:39070 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=26.397566ms
+[34m2023-09-18 03:23:18.922 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 049[0m Writing block [6] (Raft index: 10) to ledger channel=mychannel node=1
+[33m2023-09-18 03:23:19.468 UTC [common.deliver] Handle -> WARN 04a[0m Error reading from 192.168.208.7:39080: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:23:19.469 UTC [comm.grpc.server] 1 -> INFO 04b[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=192.168.208.7:39080 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=7.098408ms
+[33m2023-09-18 03:23:22.777 UTC [common.deliver] Handle -> WARN 04c[0m Error reading from 192.168.208.7:39086: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:23:22.777 UTC [comm.grpc.server] 1 -> INFO 04d[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=192.168.208.7:39086 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=16.493716ms
+[34m2023-09-18 03:23:23.143 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 04e[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:23:23.148 UTC [orderer.common.broadcast] Handle -> WARN 04f[0m Error reading from 192.168.208.7:39096: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:23:23.148 UTC [comm.grpc.server] 1 -> INFO 050[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.7:39096 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=22.369831ms
+[34m2023-09-18 03:23:23.161 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 051[0m Writing block [7] (Raft index: 11) to ledger channel=mychannel node=1
+[34m2023-09-18 03:25:13.689 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 052[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[34m2023-09-18 03:25:15.705 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 053[0m Writing block [8] (Raft index: 12) to ledger channel=mychannel node=1
+[33m2023-09-18 03:25:15.958 UTC [orderer.common.broadcast] Handle -> WARN 054[0m Error reading from 192.168.208.1:52246: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:25:15.958 UTC [comm.grpc.server] 1 -> INFO 055[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52246 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=2.290150011s
+[34m2023-09-18 03:25:27.159 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 056[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:25:27.164 UTC [orderer.common.broadcast] Handle -> WARN 057[0m Error reading from 192.168.208.1:52280: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:25:27.164 UTC [comm.grpc.server] 1 -> INFO 058[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52280 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=30.387155ms
+[34m2023-09-18 03:25:29.175 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 059[0m Writing block [9] (Raft index: 13) to ledger channel=mychannel node=1
+[34m2023-09-18 03:25:45.673 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 05a[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:25:45.677 UTC [orderer.common.broadcast] Handle -> WARN 05b[0m Error reading from 192.168.208.1:52324: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:25:45.677 UTC [comm.grpc.server] 1 -> INFO 05c[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52324 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=19.717437ms
+[34m2023-09-18 03:25:47.688 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 05d[0m Writing block [10] (Raft index: 14) to ledger channel=mychannel node=1
+[34m2023-09-18 03:26:17.104 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 05e[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:26:17.109 UTC [orderer.common.broadcast] Handle -> WARN 05f[0m Error reading from 192.168.208.1:52364: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:26:17.109 UTC [comm.grpc.server] 1 -> INFO 060[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52364 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=14.9209ms
+[34m2023-09-18 03:26:19.159 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 061[0m Writing block [11] (Raft index: 15) to ledger channel=mychannel node=1
+[34m2023-09-18 03:27:39.143 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 062[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:27:39.148 UTC [orderer.common.broadcast] Handle -> WARN 063[0m Error reading from 192.168.208.1:52452: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:27:39.148 UTC [comm.grpc.server] 1 -> INFO 064[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52452 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=19.531981ms
+[34m2023-09-18 03:27:41.233 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 065[0m Writing block [12] (Raft index: 16) to ledger channel=mychannel node=1
+[33m2023-09-18 03:29:15.052 UTC [common.deliver] Handle -> WARN 066[0m Error reading from 10.176.14.71:45476: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:29:15.052 UTC [comm.grpc.server] 1 -> INFO 067[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=10.176.14.71:45476 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=11.172445ms
+[34m2023-09-18 03:29:46.389 UTC [comm.grpc.server] 1 -> INFO 068[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=192.168.208.3:45210 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=8m17.777752377s
+[34m2023-09-18 03:29:46.843 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 069[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:29:46.848 UTC [orderer.common.broadcast] Handle -> WARN 06a[0m Error reading from 192.168.208.1:52568: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:29:46.848 UTC [comm.grpc.server] 1 -> INFO 06b[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52568 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.068722ms
+[34m2023-09-18 03:29:48.864 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 06c[0m Writing block [13] (Raft index: 17) to ledger channel=mychannel node=1
+[34m2023-09-18 03:31:53.851 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 06d[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 03:31:53.856 UTC [orderer.common.broadcast] Handle -> WARN 06e[0m Error reading from 192.168.208.1:52732: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 03:31:53.856 UTC [comm.grpc.server] 1 -> INFO 06f[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:52732 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.28442ms
+[34m2023-09-18 03:31:56.124 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 070[0m Writing block [14] (Raft index: 18) to ledger channel=mychannel node=1
+[34m2023-09-18 05:38:02.930 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 071[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 05:38:02.935 UTC [orderer.common.broadcast] Handle -> WARN 072[0m Error reading from 192.168.208.1:55906: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 05:38:02.935 UTC [comm.grpc.server] 1 -> INFO 073[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:55906 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.687093ms
+[34m2023-09-18 05:38:04.949 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 074[0m Writing block [15] (Raft index: 19) to ledger channel=mychannel node=1
+[33m2023-09-18 05:39:38.547 UTC [common.deliver] Handle -> WARN 075[0m Error reading from 10.176.14.71:48932: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 05:39:38.549 UTC [comm.grpc.server] 1 -> INFO 076[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=10.176.14.71:48932 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=61.006634ms
+[34m2023-09-18 05:40:09.395 UTC [comm.grpc.server] 1 -> INFO 077[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Deliver grpc.peer_address=192.168.208.3:45842 error="context finished before block retrieved: context canceled" grpc.code=Unknown grpc.call_duration=2h10m20.380528054s
+[34m2023-09-18 05:40:09.841 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 078[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 05:40:09.847 UTC [orderer.common.broadcast] Handle -> WARN 079[0m Error reading from 192.168.208.1:56024: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 05:40:09.847 UTC [comm.grpc.server] 1 -> INFO 07a[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:56024 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.184116ms
+[34m2023-09-18 05:40:11.950 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 07b[0m Writing block [16] (Raft index: 20) to ledger channel=mychannel node=1
+[34m2023-09-18 05:42:14.104 UTC [orderer.consensus.etcdraft] forwardToLeader -> INFO 07c[0m Forwarding transaction to the leader 2 channel=mychannel node=1
+[33m2023-09-18 05:42:14.108 UTC [orderer.common.broadcast] Handle -> WARN 07d[0m Error reading from 192.168.208.1:56150: rpc error: code = Canceled desc = context canceled
+[34m2023-09-18 05:42:14.108 UTC [comm.grpc.server] 1 -> INFO 07e[0m streaming call completed grpc.service=orderer.AtomicBroadcast grpc.method=Broadcast grpc.peer_address=192.168.208.1:56150 error="rpc error: code = Canceled desc = context canceled" grpc.code=Canceled grpc.call_duration=18.10691ms
+[34m2023-09-18 05:42:16.530 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 07f[0m Writing block [17] (Raft index: 21) to ledger channel=mychannel node=1

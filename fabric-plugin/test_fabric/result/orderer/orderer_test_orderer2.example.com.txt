@@ -1,0 +1,100 @@
+[34m2023-09-18 05:42:15.771 UTC [orderer.common.server] Main -> INFO 005[0m Starting without a system channel
+[34m2023-09-18 05:42:15.771 UTC [orderer.common.server] Main -> INFO 006[0m Setting up cluster
+[34m2023-09-18 05:42:15.771 UTC [orderer.common.server] reuseListener -> INFO 007[0m Cluster listener is not configured, defaulting to use the general listener on port 9050
+[34m2023-09-18 05:42:15.771 UTC [orderer.common.server] reuseListener -> INFO 008[0m Cluster listener is not configured, defaulting to use the general listener on port 9050
+[34m2023-09-18 05:42:15.772 UTC [certmonitor] trackCertExpiration -> INFO 009[0m The enrollment certificate will expire on 2033-09-15 03:16:00 +0000 UTC
+[34m2023-09-18 05:42:15.772 UTC [certmonitor] trackCertExpiration -> INFO 00a[0m The server TLS certificate will expire on 2033-09-15 03:16:00 +0000 UTC
+[34m2023-09-18 05:42:15.772 UTC [certmonitor] trackCertExpiration -> INFO 00b[0m The client TLS certificate will expire on 2033-09-15 03:16:00 +0000 UTC
+[34m2023-09-18 05:42:15.772 UTC [orderer.commmon.multichannel] InitJoinBlockFileRepo -> INFO 00c[0m Channel Participation API enabled, registrar initializing with file repo /var/hyperledger/production/orderer/pendingops
+[34m2023-09-18 05:42:15.872 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 00d[0m EvictionSuspicion not set, defaulting to 10m0s
+[34m2023-09-18 05:42:15.872 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 00e[0m Without system channel: after eviction Registrar.SwitchToFollower will be called
+[34m2023-09-18 05:42:15.872 UTC [orderer.consensus.etcdraft] createOrReadWAL -> INFO 00f[0m Found WAL data at path '/var/hyperledger/production/orderer/etcdraft/wal/mychannel', replaying it channel=mychannel node=3
+[34m2023-09-18 05:42:15.878 UTC [orderer.consensus.etcdraft] Start -> INFO 010[0m Starting Raft node channel=mychannel node=3
+[34m2023-09-18 05:42:15.878 UTC [orderer.common.cluster] Configure -> INFO 011[0m Entering, channel: mychannel, nodes: [ID: 1,
+Endpoint: orderer0.example.com:7050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICWzCCAgKgAwIBAgIQPuKywRMNnOZn398m3zd9XzAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIzMDkxODAzMTYwMFoXDTMzMDkxNTAzMTYwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXIwLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEF21+UISH5MAp9JIVPJ9PmJj4/yelQzzDT/HwTA3lgsVd
+N98N964ZdZ2IYbnwCSOeJw+rlbEYGhyrtGW0bJMrOaOBmDCBlTAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAg7XQT6I9coF82jlvUOhvN5eRZtt/iS0PAfj0H2IP4f1Uw
+KQYDVR0RBCIwIIIUb3JkZXJlcjAuZXhhbXBsZS5jb22CCG9yZGVyZXIwMAoGCCqG
+SM49BAMCA0cAMEQCIFg/Odq6CSXuAmExUniunTuphhwtm5wv9szcOka/cLO6AiAb
+6vuyEnXtC4+hF4Yy2MHzNo9lDhmt/sZ/3O2SigKKiw==
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICWzCCAgKgAwIBAgIQPuKywRMNnOZn398m3zd9XzAKBggqhkjOPQQDAjBsMQsw
+CQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNU2FuIEZy
+YW5jaXNjbzEUMBIGA1UEChMLZXhhbXBsZS5jb20xGjAYBgNVBAMTEXRsc2NhLmV4
+YW1wbGUuY29tMB4XDTIzMDkxODAzMTYwMFoXDTMzMDkxNTAzMTYwMFowWTELMAkG
+A1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBGcmFu
+Y2lzY28xHTAbBgNVBAMTFG9yZGVyZXIwLmV4YW1wbGUuY29tMFkwEwYHKoZIzj0C
+AQYIKoZIzj0DAQcDQgAEF21+UISH5MAp9JIVPJ9PmJj4/yelQzzDT/HwTA3lgsVd
+N98N964ZdZ2IYbnwCSOeJw+rlbEYGhyrtGW0bJMrOaOBmDCBlTAOBgNVHQ8BAf8E
+BAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQC
+MAAwKwYDVR0jBCQwIoAg7XQT6I9coF82jlvUOhvN5eRZtt/iS0PAfj0H2IP4f1Uw
+KQYDVR0RBCIwIIIUb3JkZXJlcjAuZXhhbXBsZS5jb22CCG9yZGVyZXIwMAoGCCqG
+SM49BAMCA0cAMEQCIFg/Odq6CSXuAmExUniunTuphhwtm5wv9szcOka/cLO6AiAb
+6vuyEnXtC4+hF4Yy2MHzNo9lDhmt/sZ/3O2SigKKiw==
+-----END CERTIFICATE-----
+ ID: 2,
+Endpoint: orderer1.example.com:8050,
+ServerTLSCert:-----BEGIN CERTIFICATE-----
+MIICXDCCAgOgAwIBAgIRALqNVYsAW9zWO1DJehWzP3UwCgYIKoZIzj0EAwIwbDEL
+MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+cmFuY2lzY28xFDASBgNVBAoTC2V4YW1wbGUuY29tMRowGAYDVQQDExF0bHNjYS5l
+eGFtcGxlLmNvbTAeFw0yMzA5MTgwMzE2MDBaFw0zMzA5MTUwMzE2MDBaMFkxCzAJ
+BgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJh
+bmNpc2NvMR0wGwYDVQQDExRvcmRlcmVyMS5leGFtcGxlLmNvbTBZMBMGByqGSM49
+AgEGCCqGSM49AwEHA0IABGJwXjxJ+3IX02VQ1Y+Lsa1xXyETqZkx7EdYId9iN5FV
+bFc/w/d99dHYf+sj5YJ0pckqbXYBPPpfrxpL5Km2tByjgZgwgZUwDgYDVR0PAQH/
+BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E
+AjAAMCsGA1UdIwQkMCKAIO10E+iPXKBfNo5b1DobzeXkWbbf4ktDwH49B9iD+H9V
+MCkGA1UdEQQiMCCCFG9yZGVyZXIxLmV4YW1wbGUuY29tgghvcmRlcmVyMTAKBggq
+hkjOPQQDAgNHADBEAiBRhww8g/QMEryyWRB1igQUccTc3yk+g3V80wE3NuGgewIg
+Aix1LbJNRxMRMlYhrZ/TD0lRuu0ET4WnWMlNtmFp9f8=
+-----END CERTIFICATE-----
+, ClientTLSCert:-----BEGIN CERTIFICATE-----
+MIICXDCCAgOgAwIBAgIRALqNVYsAW9zWO1DJehWzP3UwCgYIKoZIzj0EAwIwbDEL
+MAkGA1UEBhMCVVMxEzARBgNVBAgTCkNhbGlmb3JuaWExFjAUBgNVBAcTDVNhbiBG
+cmFuY2lzY28xFDASBgNVBAoTC2V4YW1wbGUuY29tMRowGAYDVQQDExF0bHNjYS5l
+eGFtcGxlLmNvbTAeFw0yMzA5MTgwMzE2MDBaFw0zMzA5MTUwMzE2MDBaMFkxCzAJ
+BgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1TYW4gRnJh
+bmNpc2NvMR0wGwYDVQQDExRvcmRlcmVyMS5leGFtcGxlLmNvbTBZMBMGByqGSM49
+AgEGCCqGSM49AwEHA0IABGJwXjxJ+3IX02VQ1Y+Lsa1xXyETqZkx7EdYId9iN5FV
+bFc/w/d99dHYf+sj5YJ0pckqbXYBPPpfrxpL5Km2tByjgZgwgZUwDgYDVR0PAQH/
+BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8E
+AjAAMCsGA1UdIwQkMCKAIO10E+iPXKBfNo5b1DobzeXkWbbf4ktDwH49B9iD+H9V
+MCkGA1UdEQQiMCCCFG9yZGVyZXIxLmV4YW1wbGUuY29tgghvcmRlcmVyMTAKBggq
+hkjOPQQDAgNHADBEAiBRhww8g/QMEryyWRB1igQUccTc3yk+g3V80wE3NuGgewIg
+Aix1LbJNRxMRMlYhrZ/TD0lRuu0ET4WnWMlNtmFp9f8=
+-----END CERTIFICATE-----
+]
+[34m2023-09-18 05:42:15.878 UTC [orderer.common.cluster] updateStubInMapping -> INFO 012[0m Allocating a new stub for node 1 with endpoint of orderer0.example.com:7050 for channel mychannel
+[34m2023-09-18 05:42:15.878 UTC [orderer.common.cluster] updateStubInMapping -> INFO 013[0m Deactivating node 1 in channel mychannel with endpoint of orderer0.example.com:7050 due to TLS certificate change
+[34m2023-09-18 05:42:15.879 UTC [orderer.common.cluster] updateStubInMapping -> INFO 014[0m Allocating a new stub for node 2 with endpoint of orderer1.example.com:8050 for channel mychannel
+[34m2023-09-18 05:42:15.879 UTC [orderer.common.cluster] updateStubInMapping -> INFO 015[0m Deactivating node 2 in channel mychannel with endpoint of orderer1.example.com:8050 due to TLS certificate change
+[34m2023-09-18 05:42:15.880 UTC [orderer.common.cluster] func1 -> INFO 016[0m 1 exists in both old and new membership for channel mychannel , skipping its deactivation
+[34m2023-09-18 05:42:15.880 UTC [orderer.common.cluster] func1 -> INFO 017[0m 2 exists in both old and new membership for channel mychannel , skipping its deactivation
+[34m2023-09-18 05:42:15.880 UTC [orderer.common.cluster] Configure -> INFO 018[0m Exiting
+[34m2023-09-18 05:42:15.880 UTC [orderer.consensus.etcdraft] start -> INFO 019[0m Restarting raft node channel=mychannel node=3
+[34m2023-09-18 05:42:15.880 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 01a[0m 3 became follower at term 2 channel=mychannel node=3
+[34m2023-09-18 05:42:15.880 UTC [orderer.consensus.etcdraft] newRaft -> INFO 01b[0m newRaft 3 [peers: [], term: 2, commit: 19, applied: 0, lastindex: 20, lastterm: 2] channel=mychannel node=3
+[34m2023-09-18 05:42:15.880 UTC [orderer.commmon.multichannel] startChannels -> INFO 01c[0m Registrar initializing without a system channel, number of application channels: 1, with 1 consensus.Chain(s) and 0 follower.Chain(s)
+[34m2023-09-18 05:42:15.881 UTC [orderer.common.server] Main -> INFO 01d[0m Starting orderer:
+ Version: 2.3.3
+ Commit SHA: 9955302
+ Go version: go1.16.7
+ OS/Arch: linux/amd64
+[34m2023-09-18 05:42:15.882 UTC [orderer.common.server] Main -> INFO 01e[0m Beginning to serve requests
+[34m2023-09-18 05:42:15.915 UTC [orderer.consensus.etcdraft] apply -> INFO 01f[0m Applied config change to add node 1, current nodes in channel: [1] channel=mychannel node=3
+[34m2023-09-18 05:42:15.915 UTC [orderer.consensus.etcdraft] apply -> INFO 020[0m Applied config change to add node 2, current nodes in channel: [1 2] channel=mychannel node=3
+[34m2023-09-18 05:42:15.915 UTC [orderer.consensus.etcdraft] apply -> INFO 021[0m Applied config change to add node 3, current nodes in channel: [1 2 3] channel=mychannel node=3
+[34m2023-09-18 05:42:15.921 UTC [orderer.consensus.etcdraft] run -> INFO 022[0m raft.node: 3 elected leader 2 at term 2 channel=mychannel node=3
+[34m2023-09-18 05:42:15.922 UTC [orderer.consensus.etcdraft] run -> INFO 023[0m Raft leader changed: 0 -> 2 channel=mychannel node=3
+[34m2023-09-18 05:42:16.533 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 024[0m Writing block [17] (Raft index: 21) to ledger channel=mychannel node=3

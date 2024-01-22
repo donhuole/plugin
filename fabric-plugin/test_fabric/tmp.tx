@@ -1,0 +1,1 @@
+peer channel fetch newest -c mychannel --orderer orderer0.example.com:7050 --tls --cafile /home/ubuntu/ms/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer0.example.com/msp/tlscacerts/tlsca.example.com-cert.pem

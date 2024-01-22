@@ -1,0 +1,114 @@
+./test_query_or_invoke.sh: line 124: 12: command not found
+./test_query_or_invoke.sh: line 124: 12: command not found
+./test_query_or_invoke.sh: line 124: 12: command not found
+./test_query_or_invoke.sh: line 124: 12: command not found
+time="2023-06-10T05:03:06Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:03:06Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"e9e3f6d3b797634e"}
+./test_query_or_invoke.sh: line 124: 12: command not found
+time="2023-06-10T05:03:38Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:03:38Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"00a4e71d2aec73d1"}
+./test_query_or_invoke.sh: line 124: 12: command not found
+./test_query_or_invoke.sh: line 124: 12: command not found
+./test_query_or_invoke.sh: line 124: 12: command not found
+./test_query_or_invoke.sh: line 124: 12: command not found
+./test_query_or_invoke.sh: line 124: 12: command not found
+time="2023-06-10T05:12:33Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:12:33Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"97d046ffa62c2958"}
+./test_query_or_invoke.sh: line 124: 12: command not found
+time="2023-06-10T05:13:05Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:13:05Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"dabd279611653ac8"}
+./test_query_or_invoke.sh: line 124: 12: command not found
+time="2023-06-10T05:13:37Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:13:37Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"3ae4ce62d4ecdc73"}
+[34m2023-06-10 05:14:11.333 UTC [channelCmd] InitCmdFactory -> INFO 001[0m Endorser and orderer connections initialized
+[34m2023-06-10 05:14:11.470 UTC [cli.common] readBlock -> INFO 002[0m Received block: 7
+time="2023-06-10T05:27:01Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:27:01Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"5a662326d5f733d6"}
+time="2023-06-10T05:27:34Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:27:34Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"eac248e97e9a2524"}
+time="2023-06-10T05:28:08Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T05:28:08Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"e88cb34eb04b0dde"}
+./test_orderer_data_consistency.sh: line 16: 24517 Killed                  docker logs -f $orderer_name --tail 10 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 24518 Killed                  docker logs -f $orderer_name --tail 10 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 24519 Killed                  docker logs -f $orderer_name --tail 10 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+comm: file 2 is not in sorted order
+time="2023-06-10T06:05:16Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T06:05:16Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"eafc50fdbab42593"}
+time="2023-06-10T06:05:48Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T06:05:48Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"575358771b6856a3"}
+time="2023-06-10T06:06:20Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-06-10T06:06:20Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"20d8f9c285c65693"}
+./test_orderer_data_consistency.sh: line 16: 30032 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 30033 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 30034 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+time="2023-09-12T06:36:14Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-12T06:36:14Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"4dde77d9e4265cbd"}
+time="2023-09-12T06:36:49Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-12T06:36:49Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":63063,"success":false,"error":"`/bin/sh -c /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/bin/chaos_burnio --read=true --write=true --directory / --size 10 --start --debug=false`: cmd exec failed, err: Error: using dd command to create a temp file under / directory for reading error, `/bin/sh -c dd if=/dev/zero of=/chaos_burnio.read bs=6M count=100 oflag=dsync`: cmd exec failed, err: dd: failed to open '/chaos_burnio.read': Permission denied signal: killed","result":"9041daeb52821576"}
+time="2023-09-12T06:37:25Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-12T06:37:25Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"1d90a69ae0c4753e"}
+mv: replace 'result/block/mychannel_newest.block', overriding mode 0644 (rw-r--r--)? Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/peer0.org1.example.com/stop: dial unix /var/run/docker.sock: connect: permission denied
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/peer0.org1.example.com/start: dial unix /var/run/docker.sock: connect: permission denied
+Error: failed to start containers: peer0.org1.example.com
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/orderer2.example.com/stop: dial unix /var/run/docker.sock: connect: permission denied
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/orderer2.example.com/start: dial unix /var/run/docker.sock: connect: permission denied
+Error: failed to start containers: orderer2.example.com
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/orderer2.example.com/stop: dial unix /var/run/docker.sock: connect: permission denied
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/orderer2.example.com/start: dial unix /var/run/docker.sock: connect: permission denied
+Error: failed to start containers: orderer2.example.com
+./test_orderer_data_consistency.sh: line 69: kill: (12791) - No such process
+time="2023-09-18T03:26:19Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T03:26:19Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"99537ae6e09d1c8a"}
+time="2023-09-18T03:26:52Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T03:26:52Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"bd637c087cacf195"}
+time="2023-09-18T03:27:24Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T03:27:24Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"0bf1568326763023"}
+time="2023-09-18T03:27:40Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T03:27:40Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"9dd2c162aa49e679"}
+time="2023-09-18T03:28:12Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T03:28:12Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"4cf1578266a5b990"}
+time="2023-09-18T03:28:44Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T03:28:44Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"f612a34a106b5200"}
+./test_orderer_data_consistency.sh: line 16: 24621 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 24622 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 24623 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+time="2023-09-18T05:38:04Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T05:38:04Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"e3151a82fae7fda4"}
+time="2023-09-18T05:38:35Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T05:38:35Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"c6802c879507e6d5"}
+time="2023-09-18T05:39:08Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2023-09-18T05:39:08Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ms/fabric-samples/test-network/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"eb2f99e2208e9cc5"}
+./test_orderer_data_consistency.sh: line 16: 32497 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 32498 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+./test_orderer_data_consistency.sh: line 16: 32499 Killed                  docker logs -f $orderer_name --tail 100 > $ORDERER_RESULT_ADDRESS/orderer_test_$orderer_name.txt 2>&1
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json: dial unix /var/run/docker.sock: connect: permission denied
+ls: cannot access '/home/ubuntu/ws/FinTechBlockchain/src/main/java/com/mit/fabricsdk/plugin/fabirc/organizations': No such file or directory
+sort: cannot read: temp.txt: No such file or directory
+rm: cannot remove 'temp.txt': No such file or directory
+time="2024-01-16T08:39:08Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ws/FinTechBlockchain/src/main/java/com/mit/fabricsdk/plugin/fabirc/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+time="2024-01-16T08:39:08Z" level=warning msg="parse java spec failed, so skip it, open /home/ubuntu/ws/FinTechBlockchain/src/main/java/com/mit/fabricsdk/plugin/fabirc/test_fabric/tools/target/chaosblade-1.5.0/yaml/chaosblade-jvm-spec-1.5.0.yaml: no such file or directory"
+{"code":200,"success":true,"result":"84842c04b1acde02"}

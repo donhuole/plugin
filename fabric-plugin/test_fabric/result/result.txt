@@ -1,0 +1,24 @@
+[0;34m2024-01-16 16:39:06[0m
+-------------------------------------------------
+[0;34m./test_docker_architecture.sh # Testing if using docker architecture[0m
+
+[1;33mNot Using Docker Architecture![0m
+[0;34m./test_query_or_invoke.sh query 1 1 mychannel basic ReadAsset asset6[0m
+[0;34mUsing organization 1[0m
+Querying~
+[0;34m./test_query_or_invoke.sh query 2 1 mychannel basic ReadAsset asset6 # Testing query command[0m
+[0;34mUsing organization 1[0m
+Querying~
+[0;31mQuery result is different[0m
+[0;34m./test_query_or_invoke.sh invoke 1 mychannel basic TransferAsset asset6 Amy # Testing invoke command[0m
+[0;34mUsing organization 1[0m
+Invoking~
+[0;31mInvoke Failed[0m
+[0;34m./detect_encryption_method.sh # Testing all encryption algorithms[0m
+[0;34m./test_blade.sh # Testing maintainability Creating faults with chaosblade, a chaos engineering tool[0m
+[0;34mUsing organization 1[0m
+Querying~
+Creating cpu blade~
+[0;34mUsing organization 1[0m
+Querying~
+[0;31mQuery result is different[0m

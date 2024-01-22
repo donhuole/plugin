@@ -1,0 +1,1 @@
+[31m2024-01-16 08:39:08.148 UTC [main] InitCmd -> ERRO 001[0m Fatal error when initializing core config : FABRIC_CFG_PATH /home/ubuntu/ws/FinTechBlockchain/src/main/java/com/mit/fabricsdk/plugin/fabirc/../config/ does not exist
