@@ -11,58 +11,51 @@ import io.grpc.ServerBuilder;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import com.mit.proto.TestProto;
-import com.mit.proto.TestProto.HelloRequest;
-import com.mit.proto.TestProto.HelloResponse;
+import com.mit.proto.HelloRequest;
+import com.mit.proto.HelloResponse;
+import com.mit.proto.HelloServiceGrpc;
+
 public class GrpcServer {
-    private Server server;
-    private void start() throws IOException {
-        int port = 44444;
-        server = ServerBuilder.forPort(port)
-                .addService((BindableService) new HelloImpl())
-                .build()
-                .start();
-        System.out.println("Server started, listening on " + port);
-        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-            // jvm关闭前执行
-            System.err.println("*** shutting down gRPC server since JVM is shutting down");
-            try {
-                GrpcServer.this.stop();
-            } catch (InterruptedException e) {
-                e.printStackTrace(System.err);
-            }
-            System.err.println("*** server shut down");
-        }));
-    }
+    // private Server server;
+    // private void start() throws IOException {
+    //     int port = 44444;
+    //     server = ServerBuilder.forPort(port)
+    //             .addService((BindableService) new HelloServiceImpl())
+    //             .build()
+    //             .start();
+    //     System.out.println("Server started, listening on " + port);
+    //     Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+    //         // jvm关闭前执行
+    //         System.err.println("*** shutting down gRPC server since JVM is shutting down");
+    //         try {
+    //             GrpcServer.this.stop();
+    //         } catch (InterruptedException e) {
+    //             e.printStackTrace(System.err);
+    //         }
+    //         System.err.println("*** server shut down");
+    //     }));
+    // }
 
-    private void stop() throws InterruptedException {
-        if (server != null) {
-            server.shutdown().awaitTermination(30, TimeUnit.SECONDS);
-        }
-    }
+    // private void stop() throws InterruptedException {
+    //     if (server != null) {
+    //         server.shutdown().awaitTermination(30, TimeUnit.SECONDS);
+    //     }
+    // }
 
-    /**
-     * 阻塞等待主线程终止
-     * @throws InterruptedException
-     */
-    private void blockUntilShutdown() throws InterruptedException {
-        if (server != null) {
-            server.awaitTermination();
-        }
-    }
+    // /**
+    //  * 阻塞等待主线程终止
+    //  * @throws InterruptedException
+    //  */
+    // private void blockUntilShutdown() throws InterruptedException {
+    //     if (server != null) {
+    //         server.awaitTermination();
+    //     }
+    // }
 
-    public static void main(String[] args) throws IOException, InterruptedException {
-        final GrpcServer server = new GrpcServer();
-        server.start();
-        server.blockUntilShutdown();
-    }
-
-    private class HelloImpl extends HelloImplBase{
-
-        public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
-            HelloResponse helloResponse = HelloResponse.newBuilder().setMessage("Hello "+request.getName()+", I'm Java grpc Server").build();
-            responseObserver.onNext(helloResponse);
-            responseObserver.onCompleted();
-        }
-    }
+    // public static void main(String[] args) throws IOException, InterruptedException {
+    //     final GrpcServer server = new GrpcServer();
+    //     server.start();
+    //     server.blockUntilShutdown();
+    // }
     
 }
