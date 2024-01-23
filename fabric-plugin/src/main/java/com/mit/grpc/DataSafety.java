@@ -1,4 +1,4 @@
-package com.mit;
+package com.mit.grpc;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

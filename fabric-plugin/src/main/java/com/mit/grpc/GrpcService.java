@@ -1,4 +1,4 @@
-package com.mit;
+package com.mit.grpc;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.ServerMethodDefinition;

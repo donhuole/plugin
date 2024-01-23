@@ -1,4 +1,4 @@
-package com.mit;
+package com.mit.grpc;
 
 import io.grpc.stub.StreamObserver;
 // import com.example.MyRequest;

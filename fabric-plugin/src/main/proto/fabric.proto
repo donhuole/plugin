@@ -1,9 +1,9 @@
 syntax = "proto3"; // 定义语法类型，通常proto3好于proto2，proto2好于proto1，如果不指定，默认使用proto2，必须位于第一行
 
 package com.mit; // 定义作用域
-option java_package = "proto";
+option java_package = "com.mit.proto";
 option java_outer_classname = "TestProto";
-option java_multiple_files = false;
+option java_multiple_files = true;
 
 service Hello {  // 定义服务
   rpc SayHello (HelloRequest) returns (HelloResponse) {}

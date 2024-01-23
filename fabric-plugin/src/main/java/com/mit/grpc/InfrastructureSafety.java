@@ -1,5 +1,5 @@
 
-package com.mit;
+package com.mit.grpc;
 
 public class InfrastructureSafety {
 

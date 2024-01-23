@@ -1,4 +1,4 @@
-package com.mit;
+package com.mit.grpc;
 
 // import com.mit.HelloGrpc;
 // import com.mit.HelloOuterClass.HelloRequest;
@@ -8,28 +8,30 @@ import io.grpc.BindableService;
 import io.grpc.Grpc;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+import com.mit.proto.TestProto;
+import com.mit.proto.TestProto.HelloRequest;
+import com.mit.proto.TestProto.HelloResponse;
 public class GrpcServer {
     private Server server;
     private void start() throws IOException {
-        // int port = 44444;
-        // server = ServerBuilder.forPort(port)
-        //         .addService((BindableService) new HelloImpl())
-        //         .build()
-        //         .start();
-        // System.out.println("Server started, listening on " + port);
-        // Runtime.getRuntime().addShutdownHook(new Thread(() -> {
-        //     // jvm关闭前执行
-        //     System.err.println("*** shutting down gRPC server since JVM is shutting down");
-        //     try {
-        //         GrpcServer.this.stop();
-        //     } catch (InterruptedException e) {
-        //         e.printStackTrace(System.err);
-        //     }
-        //     System.err.println("*** server shut down");
-        // }));
+        int port = 44444;
+        server = ServerBuilder.forPort(port)
+                .addService((BindableService) new HelloImpl())
+                .build()
+                .start();
+        System.out.println("Server started, listening on " + port);
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            // jvm关闭前执行
+            System.err.println("*** shutting down gRPC server since JVM is shutting down");
+            try {
+                GrpcServer.this.stop();
+            } catch (InterruptedException e) {
+                e.printStackTrace(System.err);
+            }
+            System.err.println("*** server shut down");
+        }));
     }
 
     private void stop() throws InterruptedException {
@@ -54,14 +56,13 @@ public class GrpcServer {
         server.blockUntilShutdown();
     }
 
-    // private class HelloImpl extends HelloGrpc.HelloImplBase{
+    private class HelloImpl extends HelloImplBase{
 
-    //     @Override
-    //     public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
-    //         HelloResponse helloResponse = HelloResponse.newBuilder().setMessage("Hello "+request.getName()+", I'm Java grpc Server").build();
-    //         responseObserver.onNext(helloResponse);
-    //         responseObserver.onCompleted();
-    //     }
-    // }
+        public void sayHello(HelloRequest request, StreamObserver<HelloResponse> responseObserver) {
+            HelloResponse helloResponse = HelloResponse.newBuilder().setMessage("Hello "+request.getName()+", I'm Java grpc Server").build();
+            responseObserver.onNext(helloResponse);
+            responseObserver.onCompleted();
+        }
+    }
     
 }

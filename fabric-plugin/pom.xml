@@ -69,8 +69,8 @@
             <pluginId>grpc-java</pluginId>
             <pluginArtifact>io.grpc:protoc-gen-grpc-java:1.40.1:exe:linux-x86_64</pluginArtifact>
             <protoSourceRoot>src/main/proto</protoSourceRoot>
-            <!-- <outputDirectory>src/main/</outputDirectory>
-            <cleanOutputFolder>false</cleanOutputFolder> -->
+            <outputDirectory>src/main/java</outputDirectory>
+            <cleanOutputFolder>false</cleanOutputFolder>
           </configuration>
           <executions>
             <execution>
