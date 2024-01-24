@@ -4,15 +4,19 @@ package com.mit;
 import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
-
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 
 import com.mit.grpc.DataSafety;
+import com.mit.grpc.LoginClient;
 import com.mit.grpc.LoginServer;
 
 /**
  * Unit test for simple App.
  */
+// @RunWith(ThreadedRunner.class)
 public class AppTest 
 {
     /**
@@ -21,12 +25,15 @@ public class AppTest
      * @throws IOException 
      */
     @Test
-    public void shouldAnswerWithTrue() throws IOException, InterruptedException
+    // @Parameters
+    public void LoginServerTest() throws IOException, InterruptedException
     {
-        assertTrue( true );
-
-        // DataSafety dataSafety = new DataSafety();
-        // dataSafety.run();
+        // assertTrue( true );
         LoginServer.main(null);
     }
-}
+
+    // @Test
+    // public void LoginClientTest(){
+    //     LoginClient.main(null);
+    }
+ 

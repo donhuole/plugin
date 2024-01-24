@@ -9,7 +9,7 @@ import io.grpc.ServerBuilder;
 public class LoginServer {
     public static void main(String[] args) throws IOException, InterruptedException {
         //绑定端口
-        ServerBuilder serverBuilder = ServerBuilder.forPort(8888);
+        ServerBuilder serverBuilder = ServerBuilder.forPort(55555);
         //添加服务
         serverBuilder.addService(new HelloServiceImpl());
         //添加拦截器
