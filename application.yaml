@@ -1,0 +1,39 @@
+grpc:
+  port: 55555
+
+
+fabric:
+  bin: /home/ubuntu/ms/fabric-samples/bin
+  ccp: 
+  user:
+    pk: /home/ubuntu/ms/fabric-samples
+    cert: /home/ubuntu/ms/fabric-samples
+  channel: mychannel
+  contract:
+    name: basic
+    query: "1 mychannel basic ReadAsset asset6"
+    invoke: "1 mychannel basic TransferAsset asset6 Amy"
+  endosement:
+    - peer1:
+        url:
+
+    - peer2:
+        url:   
+  orderer:
+    tls:
+    cert:
+    url: orderer0.example.com:7050
+
+attack:
+  node: 
+  timeout: 30
+
+
+chaosblade: 
+  tool: 
+  cpuPercentage: 
+
+
+
+
+

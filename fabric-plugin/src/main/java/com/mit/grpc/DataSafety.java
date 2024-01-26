@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class DataSafety {
     
+    
+
+
     private Map<String,Object> map = new HashMap<>();
 
     public void run(){
@@ -13,4 +16,5 @@ public class DataSafety {
         System.out.println(map.toString());
 
     }
+
 }

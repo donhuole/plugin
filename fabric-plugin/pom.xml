@@ -56,6 +56,11 @@
       <version>2.4</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+    <groupId>org.yaml</groupId>
+    <artifactId>snakeyaml</artifactId>
+    <version>1.29</version>
+</dependency>
   </dependencies>
 
   <build>
@@ -104,6 +109,7 @@
             <configuration>
                 <archive>
                     <manifest>
+                        <addClasspath>true</addClasspath>
                         <mainClass>com.example.MainClass</mainClass>
                     </manifest>
                 </archive>

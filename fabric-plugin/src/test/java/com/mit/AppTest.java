@@ -12,6 +12,7 @@ import org.junit.runners.Parameterized.Parameters;
 import com.mit.grpc.DataSafety;
 import com.mit.grpc.LoginClient;
 import com.mit.grpc.LoginServer;
+import com.mit.grpc.MyProperties;
 
 /**
  * Unit test for simple App.
@@ -29,7 +30,11 @@ public class AppTest
     public void LoginServerTest() throws IOException, InterruptedException
     {
         // assertTrue( true );
-        LoginServer.main(null);
+        // LoginServer.main(null);
+        DataSafety dataSafety = new DataSafety();
+        dataSafety.run();
+        MyProperties myProperties = new MyProperties();
+
     }
 
     // @Test
