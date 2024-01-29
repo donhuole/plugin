@@ -1,6 +1,6 @@
 #! /bin/bash
 
-. utils.sh
+. test_fabric/utils.sh
 
 test_data_duration() {
     query1

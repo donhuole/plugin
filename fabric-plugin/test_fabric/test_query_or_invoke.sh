@@ -3,7 +3,7 @@
 # Test Fabric Query & Invoke Command
 
 
-. utils.sh
+. test_fabric/utils.sh
 
 # Firstly query and then save this result as log1.txt
 saveQueryResult() {

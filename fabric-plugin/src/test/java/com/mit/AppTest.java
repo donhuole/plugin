@@ -13,6 +13,7 @@ import com.mit.grpc.DataSafety;
 import com.mit.grpc.LoginClient;
 import com.mit.grpc.LoginServer;
 import com.mit.grpc.MyProperties;
+import com.mit.grpc.MyProperties;
 
 /**
  * Unit test for simple App.
@@ -31,9 +32,11 @@ public class AppTest
     {
         // assertTrue( true );
         // LoginServer.main(null);
+        // MyProperties myProperties = new MyProperties();
+        // System.out.println(myProperties);
         DataSafety dataSafety = new DataSafety();
         dataSafety.run();
-        MyProperties myProperties = new MyProperties();
+        
 
     }
 

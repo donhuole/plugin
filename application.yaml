@@ -9,10 +9,9 @@ fabric:
     pk: /home/ubuntu/ms/fabric-samples
     cert: /home/ubuntu/ms/fabric-samples
   channel: mychannel
-  contract:
-    name: basic
-    query: "1 mychannel basic ReadAsset asset6"
-    invoke: "1 mychannel basic TransferAsset asset6 Amy"
+  contract: basic
+  query: 1 mychannel basic ReadAsset asset6
+  invoke: "1 mychannel basic TransferAsset asset6 Amy"
   endosement:
     - peer1:
         url:

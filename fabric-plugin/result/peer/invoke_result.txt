@@ -1,0 +1,1 @@
+Error: error getting endorser client for invoke: unable to load TLS root cert file from /home/ubuntu/ws/program/plugin/organizations/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/ca.crt: open /home/ubuntu/ws/program/plugin/organizations/peerOrganizations/org3.example.com/peers/peer0.org3.example.com/tls/ca.crt: no such file or directory

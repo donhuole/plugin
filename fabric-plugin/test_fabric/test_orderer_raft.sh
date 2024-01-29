@@ -4,10 +4,10 @@
 
 # Example: 
 
-. utils.sh
+. test_fabric/utils.sh
 
-example_query_cmd=./example_query.sh
-example_invoke_cmd=./example_invoke.sh
+example_query_cmd=test_fabric/example_query.sh
+example_invoke_cmd=test_fabric/example_invoke.sh
 test_orderer_data_consistency_cmd=./test_orderer_data_consistency.sh
 
 function test_raft() {

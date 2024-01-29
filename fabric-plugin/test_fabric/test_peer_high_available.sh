@@ -2,11 +2,11 @@
 
 # Test peer's High Availablity
 
-. utils.sh
+. test_fabric/utils.sh
 
 # docker stop peer0.org1.example.com
 
-cmd=./test_query_or_invoke.sh
+cmd=test_fabric/test_query_or_invoke.sh
 
 test_query_op() {
     

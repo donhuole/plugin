@@ -35,11 +35,11 @@ setGlobals() {
 }
 
 function query1() {
-    ./example_query.sh 1
+    ./test_fabric/example_query.sh 1
 }
 
 function query2() {
-    ./example_query.sh 2
+    ./test_fabric/example_query.sh 2
 }
 
 C_RESET='\033[0m'

@@ -2,11 +2,11 @@
 
 # query if using docker architecture
 
-. utils.sh
+. test_fabric/utils.sh
 
 function test_if_use_docker_architecture() {
-    local cmd=`docker ps | awk '{print $2}' | grep fabric`
-    println $cmd
+    local cmd=`sudo docker ps | awk '{print $3}' | grep orderer`
+    # println $cmd
     if [[ $cmd ]]; then
         successln "Using Docker Architecture!"
     else
